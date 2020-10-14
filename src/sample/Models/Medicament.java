@@ -1,4 +1,4 @@
-package Models;
+package sample.Models;
 
 public class Medicament {
 	private String nom;
