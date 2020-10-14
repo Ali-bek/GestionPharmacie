@@ -1,4 +1,4 @@
-package application;
+package sample;
 	
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -10,9 +10,8 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			BorderPane root = new BorderPane();
-			Scene scene = new Scene(root,400,400);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			Parent root = FXMLLoader.load(getClass().getResource("Views/Menu.fxml"));
+	        primaryStage.setTitle("Gestion de Pharmacie");
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {
