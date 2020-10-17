@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controllers.StockSelectionController">
+   <children>
+      <Label layoutX="380.0" layoutY="14.0" text="Gestion du Stock">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="116.0" layoutY="178.0" mnemonicParsing="false" onAction="#StockMedicament" prefHeight="78.0" prefWidth="230.0" text="Stock des Medicaments" />
+      <Button layoutX="532.0" layoutY="178.0" mnemonicParsing="false" onAction="#StockProduitParapharma" prefHeight="78.0" prefWidth="238.0" text="Stock des produits Parapharmaceutiques" />
+   </children>
+</AnchorPane>
