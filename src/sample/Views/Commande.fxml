@@ -8,25 +8,24 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.CommandeController">
    <children>
       <Label layoutX="345.0" layoutY="14.0" text="Gestion des Commandes">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Label>
-      <Button layoutX="41.0" layoutY="438.0" mnemonicParsing="false" text="Retourner au Menu" />
-      <Button layoutX="180.0" layoutY="292.0" mnemonicParsing="false" text="Ajouter une Commande" />
+      <Button layoutX="41.0" layoutY="438.0" mnemonicParsing="false" onAction="#retour" text="Retourner au Menu" />
+      <Button layoutX="180.0" layoutY="292.0" mnemonicParsing="false" onAction="#AjouterCommande" text="Ajouter une Commande" />
       <Label layoutX="55.0" layoutY="125.0" text="Produit à commander : " />
       <Label layoutX="55.0" layoutY="161.0" text="Quantite : " />
       <Label layoutX="55.0" layoutY="202.0" text="Nom du Client :" />
       <Label layoutX="55.0" layoutY="237.0" text="Nom du Fournisseur :" />
-      <TextField layoutX="205.0" layoutY="121.0" />
-      <TextField layoutX="205.0" layoutY="157.0" />
-      <TextField layoutX="205.0" layoutY="198.0" />
-      <TextField layoutX="205.0" layoutY="233.0" />
-      <TextField layoutX="647.0" layoutY="71.0" />
+      <TextField fx:id="ProduitField" layoutX="205.0" layoutY="121.0" />
+      <TextField fx:id="QuantiteField" layoutX="205.0" layoutY="157.0" />
+      <TextField fx:id="NomClField" layoutX="205.0" layoutY="198.0" />
+      <TextField fx:id="NomFournisseurField" layoutX="205.0" layoutY="233.0" />
+      <TextField fx:id="RechercheField" layoutX="647.0" layoutY="71.0" promptText="entrer le nom du client" />
       <Button layoutX="564.0" layoutY="71.0" mnemonicParsing="false" text="Rechercher" />
       <TableView layoutX="448.0" layoutY="124.0" prefHeight="234.0" prefWidth="386.0">
         <columns>
@@ -36,7 +35,7 @@
             <TableColumn prefWidth="112.0" text="Fournisseur" />
         </columns>
       </TableView>
-      <Button layoutX="496.0" layoutY="375.0" mnemonicParsing="false" text="Supprimer Commande" />
-      <Button layoutX="677.0" layoutY="375.0" mnemonicParsing="false" text="Modifier Commande" />
+      <Button layoutX="496.0" layoutY="375.0" mnemonicParsing="false" onAction="#SupprimerCommande" text="Supprimer Commande" />
+      <Button layoutX="677.0" layoutY="375.0" mnemonicParsing="false" onAction="#ModifierCommande" text="Modifier Commande" />
    </children>
 </AnchorPane>

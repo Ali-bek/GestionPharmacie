@@ -35,12 +35,12 @@ public class MenuController {
 
     @FXML
     void FenetreStock(ActionEvent event) throws IOException {
-    	/*Parent root = FXMLLoader.load(getClass().getResource("/sample/Views/Stock.fxml"));
+    	Parent root = FXMLLoader.load(getClass().getResource("/sample/Views/StockSelection.fxml"));
     	Scene scene = new Scene(root);
     	
     	Stage window = (Stage) ((Node) ( event.getSource())).getScene().getWindow();
     	window.setScene(scene);
-    	window.show();*/
+    	window.show();
     }
 
     @FXML
