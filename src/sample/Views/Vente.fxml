@@ -21,7 +21,7 @@
             <TableColumn prefWidth="140.79998779296875" text="Quantite" />
         </columns>
       </TableView>
-      <Button layoutX="363.0" layoutY="322.0" mnemonicParsing="false" text="Vendre" />
-      <Button layoutX="53.0" layoutY="425.0" mnemonicParsing="false" text="Retourner" />
+      <Button layoutX="363.0" layoutY="322.0" mnemonicParsing="false" onAction="#VendreProduit" text="Vendre" />
+      <Button layoutX="53.0" layoutY="425.0" mnemonicParsing="false" onAction="#retour" text="Retourner" />
    </children>
 </AnchorPane>

@@ -11,55 +11,53 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import sample.Models.Client;
 
-public class StockProduitParaController implements Initializable {
+public class ClientDetail implements Initializable {
 
-    @FXML
-    private TextField TypeField;
-
-    @FXML
-    private TextField PrixField;
 
     @FXML
-    private TextField QuantiteField;
+    private Label NomCl;
 
     @FXML
-    private TextField RechercheField;
+    private Label PrenomCl;
 
     @FXML
-    private TableView<?> TableProduit;
+    private Label AgeCl;
 
     @FXML
-    void AjouterProduit(ActionEvent event) {
+    private Label NumCl;
 
+    @FXML
+    private Label MaladieCl;
+
+    @FXML
+    private Label TraitementCl;
+    
+    public void initClient(Client cl) {
+    	NomCl.setText(cl.getNom());
+    	PrenomCl.setText(cl.getPrenom());
+    	AgeCl.setText(Integer.toString(cl.getAge()));
+    	NumCl.setText(cl.getNum_ss());
+    	MaladieCl.setText(cl.getMaladie());
+    	TraitementCl.setText(cl.getTraitement());
     }
-
-    @FXML
-    void ModifierProduit(ActionEvent event) {
-
-    }
-
-    @FXML
-    void SupprimerProduit(ActionEvent event) {
-
-    }
-
+    
     @FXML
     void retour(ActionEvent event) throws IOException {
-    	Parent root = FXMLLoader.load(getClass().getResource("/sample/Views/Menu.fxml"));
+    	Parent root = FXMLLoader.load(getClass().getResource("/sample/Views/Client.fxml"));
     	Scene scene = new Scene(root);
     	
     	Stage window = (Stage) ((Node) ( event.getSource())).getScene().getWindow();
     	window.setScene(scene);
     	window.show();
     }
-
+	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		
-		
+	
 	}
+
 }

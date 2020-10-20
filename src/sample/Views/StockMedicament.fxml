@@ -33,7 +33,7 @@
       <TextField layoutX="182.0" layoutY="181.0" />
       <TextField layoutX="182.0" layoutY="248.0" />
       <TextField layoutX="182.0" layoutY="282.0" />
-      <TextField layoutX="541.0" layoutY="59.0" prefHeight="26.0" prefWidth="182.0" promptText="entrer le nom du medicament" />
+      <TextField fx:id="RechercheField" layoutX="541.0" layoutY="59.0" prefHeight="26.0" prefWidth="182.0" promptText="entrer le nom du medicament" />
       <TableView layoutX="515.0" layoutY="126.0" prefHeight="200.0" prefWidth="301.0">
         <columns>
           <TableColumn prefWidth="91.20001220703125" text="Nom" />
@@ -41,16 +41,16 @@
             <TableColumn prefWidth="118.40008544921875" text="Mode Prise" />
         </columns>
       </TableView>
-      <Button layoutX="14.0" layoutY="460.0" mnemonicParsing="false" text="Retourner" />
+      <Button layoutX="14.0" layoutY="460.0" mnemonicParsing="false" onAction="#retour" text="Retourner" />
       <Button layoutX="277.0" layoutY="377.0" mnemonicParsing="false" text="Ajouter" />
-      <Button layoutX="630.0" layoutY="351.0" mnemonicParsing="false" text="Supprimer" />
-      <Button layoutX="732.0" layoutY="351.0" mnemonicParsing="false" text="Modifier" />
+      <Button layoutX="630.0" layoutY="351.0" mnemonicParsing="false" onAction="#SupprimerMedicament" text="Supprimer" />
+      <Button layoutX="732.0" layoutY="351.0" mnemonicParsing="false" onAction="#ModifierMedicament" text="Modifier" />
       <DatePicker layoutX="183.0" layoutY="214.0" prefHeight="26.0" prefWidth="149.0" />
       <RadioButton layoutX="169.0" layoutY="314.0" mnemonicParsing="false" text="Obligatoire" />
       <RadioButton layoutX="287.0" layoutY="314.0" mnemonicParsing="false" text="Non Obligatoire" />
       <Label layoutX="53.0" layoutY="342.0" text="Categorie Medicament : " />
       <RadioButton layoutX="200.0" layoutY="342.0" mnemonicParsing="false" text="Interne" />
       <RadioButton layoutX="315.0" layoutY="343.0" mnemonicParsing="false" text="Externe" />
-      <Button layoutX="541.0" layoutY="351.0" mnemonicParsing="false" text="Detailler" />
+      <Button layoutX="541.0" layoutY="351.0" mnemonicParsing="false" onAction="#DetaillerMedicament" text="Detailler" />
    </children>
 </AnchorPane>

@@ -14,6 +14,6 @@
       </Label>
       <Button layoutX="116.0" layoutY="178.0" mnemonicParsing="false" onAction="#StockMedicament" prefHeight="78.0" prefWidth="230.0" text="Stock des Medicaments" />
       <Button layoutX="532.0" layoutY="178.0" mnemonicParsing="false" onAction="#StockProduitParapharma" prefHeight="78.0" prefWidth="238.0" text="Stock des produits Parapharmaceutiques" />
-      <Button layoutX="64.0" layoutY="436.0" mnemonicParsing="false" text="Retourner au Menu" />
+      <Button layoutX="64.0" layoutY="436.0" mnemonicParsing="false" onAction="#retour" text="Retourner au Menu" />
    </children>
 </AnchorPane>
